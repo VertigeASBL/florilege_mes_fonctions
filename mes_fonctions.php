@@ -31,15 +31,15 @@ function filtre_monoligne_dist($str) {
 
 	$tab = explode("\n", $str);
 
-    return trim(
-        array_reduce(
-	        $tab,
-	        function ($carry, $item) {
-		        return $carry . trim($item) . ' ';
-	        },
-	        ''
-        )
-    );
+	return trim(
+		array_reduce(
+			$tab,
+			function ($carry, $item) {
+				return $carry . trim($item) . ' ';
+			},
+			''
+		)
+	);
 }
 
 /**
